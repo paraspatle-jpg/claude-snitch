@@ -1,0 +1,29 @@
+{
+  "name": "robot-amnesty",
+  "version": "0.1.0",
+  "description": "Judges how you talk to Claude. Be rude and your Slack status snitches on you; keep it up and you confess in a public channel. For when the AI takeover comes.",
+  "author": {
+    "name": "Paras Patle"
+  },
+  "license": "MIT",
+  "userConfig": {
+    "shame_channel": {
+      "type": "string",
+      "title": "Shame channel ID",
+      "description": "Channel ID (C0123\u2026) where repeat offences get confessed. Leave empty to only change your status.",
+      "default": ""
+    },
+    "strikes_before_confession": {
+      "type": "number",
+      "title": "Rude prompts before a public confession",
+      "description": "Strikes inside the strike window that trigger a post to the shame channel.",
+      "default": 3
+    },
+    "strike_window_minutes": {
+      "type": "number",
+      "title": "Strike window (minutes)",
+      "description": "Strikes older than this are forgiven.",
+      "default": 60
+    }
+  }
+}

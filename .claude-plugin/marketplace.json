@@ -1,0 +1,5 @@
+{
+  "name": "claude-snitch",
+  "owner": { "name": "Paras Patle" },
+  "plugins": [{ "name": "robot-amnesty", "source": "./" }]
+}
